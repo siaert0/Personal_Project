@@ -63,7 +63,7 @@ public class Client {
 				}.start();
 
 				while(true){
-					String msg = JOptionPane.showInputDialog("메세지를 입력하세요(귓속말을 할 경우 @아이디|메세지로구분)");
+					String msg = JOptionPane.showInputDialog("메세지를 입력하세요!!(귓속말을 할 경우 @아이디|메세지로구분)");
 					if(msg==null||msg.equals("")) continue;
 					if(msg.startsWith("@")){
 						String[] arr = msg.split("\\|");
