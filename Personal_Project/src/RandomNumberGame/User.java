@@ -14,22 +14,22 @@ public class User extends Thread
 	{	
 		try
 		{	
-			gu.setUsername(Thread.currentThread().getName());
+			GameUserNum.setUsername(Thread.currentThread().getName());
 	
 			synchronized(this)
 			{
-				if(gu.getUsername().equals("User1"))
+				if(GameUserNum.getUsername().equals("User1"))
 				{
-					gu.setUsernum(rd.nextInt(20)+1);
-					System.out.printf("[%s]유저 입력값은 : %d%n",gu.getUsername(),gu.getUsernum());
+					GameUserNum.setUsernum(rd.nextInt(20)+1);
+					System.out.printf("[%s]유저 입력값은 : %d%n",GameUserNum.getUsername(),GameUserNum.getUsernum());
 					Thread.sleep(3000);
 					notify(); wait();
 				}
 				
-				else if(gu.getUsername().equals("User2"))
+				else if(GameUserNum.getUsername().equals("User2"))
 				{
-					gu.setUsernum(rd.nextInt(20)+1);
-					System.out.printf("[%s]유저 입력값은 : %d%n",gu.getUsername(),gu.getUsernum());
+					GameUserNum.setUsernum(rd.nextInt(20)+1);
+					System.out.printf("[%s]유저 입력값은 : %d%n",GameUserNum.getUsername(),GameUserNum.getUsernum());
 					Thread.sleep(3000);
 					notify(); wait();
 				}

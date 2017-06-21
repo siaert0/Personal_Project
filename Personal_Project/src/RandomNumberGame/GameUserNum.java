@@ -9,9 +9,11 @@ public class GameUserNum
 	public static int getUsernum() {
 		return usernum;
 	}
+	
 	public static void setUsernum(int usernum) {
 		GameUserNum.usernum = usernum;
 	}
+	
 	public static String getUsername() {
 		return username;
 	}
