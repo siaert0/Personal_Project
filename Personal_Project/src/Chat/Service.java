@@ -102,7 +102,7 @@ public class Service extends Thread {
 	
 	
 	public boolean login(String id,String pwd){
-		File f = new File("c:/ChatInfo/userinfo.txt");
+		File f = new File("C:/ChatInfo/userinfo.txt");
 		try {
 			FileReader fr = new FileReader(f);
 			BufferedReader br = new BufferedReader(fr);
